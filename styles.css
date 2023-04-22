@@ -1,0 +1,227 @@
+body {
+ background-color:rgb(245,254,250);
+}
+*{
+ font-size: 20px;
+}
+body, h1, h2, h3, h4, h5, h6, button, label, input {
+ font-family: 'Montserrat', sans-serif !important;
+}
+
+hr {
+ display: none; 
+}
+
+#navbar {
+ height: 200px; 
+ background-size: cover; 
+ background-image: url('https://thumbs.dreamstime.com/b/assortment-fresh-organic-fruits-vegetables-rainbow-colors-panoramic-food-background-171245196.jpg');
+}
+
+#dark-overlay {
+ position: relative; 
+ top: 0; 
+ left: 0; 
+ width: 100%; 
+ background-color: rgba(0,0,0,0.5); 
+}
+
+#h1-brand, #calorie-counter {
+ color: #fff; 
+}
+
+#main {
+ margin-right: 50px; 
+ margin-left: 50px; 
+ margin-bottom: 50px; 
+}
+
+#main-calorie {
+ margin-top: 40px; 
+ margin-right: 50px; 
+ margin-left: 50px; 
+ margin-bottom: 50px; 
+}
+
+#search-container {
+ text-align: center; 
+ margin-bottom: 30px; 
+}
+
+#search-header {
+ margin-bottom:40px;
+}
+
+#search-inputs {
+ display: flex;
+ justify-content: space-evenly;
+}
+
+#search-field {
+ height: 50px;
+}
+
+#dropdown-container {
+ display: flex;
+ flex-direction: column;
+}
+
+.dropdown-menu {
+ margin-bottom: -90px;
+}
+
+.dropdown {
+ margin-bottom: 110px;
+}
+
+.search-text {
+ font-size: 1.2rem; 
+ margin-bottom: 5px; 
+}
+
+#search-button {
+ margin-bottom: 80px;
+ margin-top: 20px;
+}
+
+#page-content {
+ margin-bottom: 30px; 
+}
+
+#error-container {
+ margin-top: 5px; 
+}
+
+#generated-content {
+ margin-top: 20px; 
+ text-align: center; 
+ margin-bottom: 150px; 
+}
+
+#calorie-container {
+ /*margin-top: 14px;*/
+ margin-bottom: 30px;
+}
+
+#calorie-calculator {
+ text-align: center; 
+}
+
+.calorie-output {
+ padding: 10px 20px 0 40px;
+ color: rgba(120,120,120,1.0); 
+ font-size: 1rem; 
+}
+
+.button-icon {
+ padding: 5px; 
+}
+
+#button-container {
+ margin-bottom: 10px; 
+}
+
+.delete {
+ padding: 14px 5px 0 0;
+ color: rgba(120,120,120,1.0);
+}
+.food-input {
+ margin-bottom: 10px; 
+ margin-top: 10px; 
+}
+
+#total-count {
+ display: flex;
+ justify-content: flex-end;
+ padding: 10px 20px 0 0;
+}
+
+.footer { 
+ position: fixed;
+ height: 60px;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: rgb(90,90,90);
+ color: white;
+ text-align: center;
+}
+
+.footer p {
+ line-height: 30px;
+ font-weight: bold;
+}
+
+.footer-icons {
+ margin-top: -15px; 
+}
+
+.footer-icons i {
+ margin-right: 15px; 
+ margin-left: 15px; 
+}
+
+/*Media Queries*/
+
+/*Reduce main content margin on very small screens*/
+
+@media screen and (max-width: 767px) {
+ hr {
+     display: block; 
+ }
+}
+
+@media screen and (max-width: 620px) {
+ .delete {
+     padding: 12px 5px 0 0;
+     font-size: 0.8rem;
+ } 
+
+ .input-field {
+     font-size: 10px;
+ }
+
+ .calorie-output {
+     padding: 10px 0 10px 5px;
+     font-size: 0.8rem; 
+ }
+
+ #total-count {
+     font-size: 14px;
+ }
+}
+
+@media screen and (max-width: 480px) {
+
+ .input-field {
+     width: 110px;
+     font-size: 10px;
+ }
+
+ .calorie-output {
+     font-size: 0.6rem;
+ }
+
+}
+
+@media screen and (max-width: 400px) {
+ #main {
+     margin-right: 10px; 
+     margin-left: 10px; 
+ }
+
+ #h1-brand, #calorie-counter {
+     font-size: 1.2rem; 
+ }
+}
+
+@media screen and (max-width: 360px) {
+ .input-field {
+     font-size: 0.6rem;
+     width: 90px;
+ }
+
+ #total-count {
+     font-size: 0.8rem;
+ }
+}
