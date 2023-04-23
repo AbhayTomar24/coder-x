@@ -268,7 +268,7 @@ function outputZomatoResults(results) {
         //Append items 
         uiSegment.append(title);
         uiSegment.append(keywords);
-        uiSegment.append(priceOutput);
+        // uiSegment.append(priceOutput);
         uiSegment.append(addressOutut);
         searchResult.append(uiSegment);
         output.append(searchResult);
