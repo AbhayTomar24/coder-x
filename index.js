@@ -228,6 +228,11 @@ function outputZomatoResults(results) {
 
     //Clear output. 
     output.innerHTML = "";
+    var head= document.createElement('h2');
+    head.innerText= 'Restaurants Available';
+    head.style.textDecoration= 'underline';
+    head.style.margin= 'auto';
+    output.append(head);
 
     for (let thisResult = 0; thisResult < 5; thisResult++) {
         //Create the output divs to put this search result into. 
